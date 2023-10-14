@@ -5,7 +5,7 @@ import { useQuery } from 'react-query'
 import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
-export default function FeaturedProducts() {
+export default function Categories() {
 
   function getCategories(){
     return axios.get(`https://ecommerce.routemisr.com/api/v1/categories`)

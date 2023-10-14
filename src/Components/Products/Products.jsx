@@ -10,7 +10,7 @@ import { Helmet } from 'react-helmet'
 // import Style from './FeaturedProducts.module.css';
 
 
-export default function FeaturedProducts() {
+export default function Products() {
 
   let { addToCart } = useContext(cartContext)
 

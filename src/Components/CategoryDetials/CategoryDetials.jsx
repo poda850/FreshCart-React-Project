@@ -1,12 +1,10 @@
 import axios from 'axios'
-import React, { useContext } from 'react'
+import React from 'react'
 import { useQuery } from 'react-query'
 import { useParams } from 'react-router-dom'
-import { cartContext } from '../Context/CartContext'
-import toast from 'react-hot-toast'
 import { Helmet } from "react-helmet";
 
-export default function ProductDetials() {
+export default function CategoryDetials() {
 
  
 

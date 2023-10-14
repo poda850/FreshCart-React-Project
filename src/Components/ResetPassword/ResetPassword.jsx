@@ -1,53 +1,51 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 // import Style from './Login.module.css';
 import { useFormik } from 'formik';
 import * as yup from 'yup'
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { BallTriangle } from 'react-loader-spinner'
-import { TokenContext } from '../Context/TokenContext';
 import { Helmet } from 'react-helmet'
 
 
-export default function Login() {
+export default function ResetPassword() {
 
   let navigate = useNavigate();
   const [error, seterror] = useState(null)
   const [isLoading, setIsLodaing] = useState(false)
-  let { setUserToken } = useContext(TokenContext)
 
-  async function loginSubmit(values) {
+  async function restPassword(values) {
     seterror('')
     setIsLodaing(true)
-    let { data } = await axios.post('https://ecommerce.routemisr.com/api/v1/auth/signin', values)
+    let response = await axios.put('https://ecommerce.routemisr.com/api/v1/auth/resetPassword', values)
       .catch((err) => {
         seterror(err.response.data.message)
         setIsLodaing(false)
       })
-    if (data.message === "success") {
-      localStorage.setItem('userToken', data.token)
-      setUserToken(data.token)
+    if (response.data.statusMsg !== "fail") {
       setIsLodaing(false)
-      navigate('/')
+      localStorage.removeItem('userToken')
+      navigate('/login')
     }
   }
 
+  let passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   let validationSchema = yup.object({
     email: yup.string().email('email is invalid').required('email is required'),
-    password: yup.string().required('password is required'),
+    newPassword: yup.string().matches(passRegex).required('password is required'),
   })
 
   let formik = useFormik({
     initialValues: {
       email: "",
-      password: "",
+      newPassword: "",
     },
     validationSchema,
-    onSubmit: loginSubmit,
+    onSubmit: restPassword,
   })
 
   return (
-    <>
+    <> {error ? <div>true</div> : ''}
       <Helmet>
         <meta charSet="utf-8" />
         <title>Login</title>
@@ -55,29 +53,29 @@ export default function Login() {
       <form onSubmit={formik.handleSubmit} >
         <div className="container text-center d-flex justify-content-center align-items-center flex-column shadow-lg mt-5 rounded-5">
           <h1 className="fw-bolder text-main my-3">
-            <span> Login Now </span>
-            <i className="fa-solid fa-award"></i>
+            <span> Reset Password </span>
           </h1>
 
           {error ? <div className='alert alert-danger mt-2 p-2 fw-bold w-100 rounded-2 text-danger w50'>{error}</div> : null}
 
           <div className="input-group mb-4 w-75">
             <span className="input-group-text"><i className="fa-solid fa-at"></i></span>
-            <input onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.email} name="email" type="email" className="form-control" placeholder="example@example.com" autoComplete="off" />
+            <input onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.email} name="email" type="email" className="form-control" placeholder="Enter your email" autoComplete="off" />
             {formik.errors.email && formik.touched.email ? <div className='alert alert-danger mt-2 p-2 fw-bold w-100 rounded-2 text-danger'>{formik.errors.email}</div> : null}
           </div>
-          <div className="input-group mb-4 w-75">
+          <div className="input-group mb-5 w-75">
             <span className="input-group-text"><i className="fa-solid fa-lock"></i></span>
-            <input onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.password} name="password" type="password" className="form-control" placeholder="Password" autoComplete="off" />
-            {formik.errors.password && formik.touched.password ? <div className='alert alert-danger mt-2 p-2 fw-bold w-100 rounded-2 text-danger'>{formik.errors.password}</div> : null}
+            <input onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.newPassword} name="newPassword" type="password" className="form-control" placeholder="Enter a new Password" autoComplete="off" />
+            {formik.errors.newPassword && formik.touched.newPassword ? <div className='alert alert-danger mt-2 p-2 fw-bold w-100 rounded-2 text-danger'>
+              <ul className="fw-bolder text-danger my-3 text-start">
+                <li>Password must not contain Whitespaces.</li>
+                <li>Password must have at least one Uppercase Character.</li>
+                <li>Password must have at least one Lowercase Character.</li>
+                <li>Password must contain at least one Digit.</li>
+                <li>Password must contain at least one Special Symbol.</li>
+                <li>Password must be 6-32 Characters Long.</li>
+              </ul></div> : null}
           </div>
-          {error ? <div className="my-3">
-            <span className='fw-bold'>Forgot Password?</span>
-            <Link className="btn btn-outline-danger  shadow-sm ms-2" to={'/forgotPassword'}>Reset Password</Link>
-          </div> : <div className="my-3">
-            <span className='fw-bold'>Don't have an account?</span>
-            <Link className="btn bg-main text-light shadow-sm ms-2" to={'/register'}>Register Now</Link>
-          </div>}
         </div>
         {isLoading ?
           <button disabled className="btn btn-lg bg-main w-25 rounded-0 rounded-bottom-4 shadow-lg text-light mx-auto d-block d-flex justify-content-center" type='button'>
@@ -92,8 +90,9 @@ export default function Login() {
               visible={true}
             /></button>
           :
-          <button disabled={!(formik.isValid && formik.dirty)} className="btn btn-lg bg-main w-25 rounded-0 rounded-bottom-4 shadow-lg text-light mx-auto d-block " type='submit'>Login</button>}
+          <button disabled={!(formik.isValid && formik.dirty)} className="btn btn-lg bg-main w-25 rounded-0 rounded-bottom-4 shadow-lg text-light mx-auto d-block " type='submit'>Reset</button>}
       </form>
     </>
   )
 }
+

@@ -16,6 +16,10 @@ import NotFound from './Components/NotFound/NotFound';
 import { TokenContext } from './Components/Context/TokenContext';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import ProductDetials from './Components/ProductDetials/ProductDetials';
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
+import VerifyResetCode from './Components/VerifyResetCode/VerifyResetCode';
+import UpdateLoggedUserPassword from './Components/UpdateLoggedUserPassword/UpdateLoggedUserPassword';
+import ResetPassword from './Components/ResetPassword/ResetPassword';
 
 
 let routers = createHashRouter([
@@ -24,6 +28,10 @@ let routers = createHashRouter([
       { index: true, element: <ProtectedRoute> <Home /> </ProtectedRoute> },
       { path: 'login', element: <Login /> },
       { path: 'register', element: <Register /> },
+      { path: 'forgotPassword', element:<ForgotPassword />},
+      { path: 'verifyResetCode', element:<ProtectedRoute><VerifyResetCode /></ProtectedRoute>  },
+      { path: 'resetPassword', element:<ProtectedRoute><ResetPassword /></ProtectedRoute>  },
+      { path: 'updateLoggedUserPassword', element:<ProtectedRoute><UpdateLoggedUserPassword /></ProtectedRoute>  },
       { path: 'products', element:  <ProtectedRoute> <Products /> </ProtectedRoute> },
       { path: 'productDetials/:id', element:  <ProtectedRoute> <ProductDetials /> </ProtectedRoute> },
       { path: 'categories', element: <ProtectedRoute> <Categories /> </ProtectedRoute>  },
