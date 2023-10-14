@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7c5e635a3a50e96f2f7425348ca52e96",
+    "revision": "2d472b9d6b6d1629c337fdb25994ba46",
     "url": "/FreshCart-React-Project/index.html"
   },
   {
-    "revision": "a0882962cada45bd9092",
+    "revision": "8608fc5a66b469d46913",
     "url": "/FreshCart-React-Project/static/css/2.5503fa0a.chunk.css"
   },
   {
-    "revision": "27401da9845669c361f6",
-    "url": "/FreshCart-React-Project/static/css/main.7d3812e9.chunk.css"
+    "revision": "8f72a8dcd4078e39cd76",
+    "url": "/FreshCart-React-Project/static/css/main.06c6db81.chunk.css"
   },
   {
-    "revision": "a0882962cada45bd9092",
-    "url": "/FreshCart-React-Project/static/js/2.0b44cf25.chunk.js"
+    "revision": "8608fc5a66b469d46913",
+    "url": "/FreshCart-React-Project/static/js/2.6d8ab353.chunk.js"
   },
   {
     "revision": "1f71dc1d3da316a113d78db3161bda15",
-    "url": "/FreshCart-React-Project/static/js/2.0b44cf25.chunk.js.LICENSE.txt"
+    "url": "/FreshCart-React-Project/static/js/2.6d8ab353.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "27401da9845669c361f6",
-    "url": "/FreshCart-React-Project/static/js/main.980ad902.chunk.js"
+    "revision": "8f72a8dcd4078e39cd76",
+    "url": "/FreshCart-React-Project/static/js/main.27146d60.chunk.js"
   },
   {
     "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
-    "url": "/FreshCart-React-Project/static/js/main.980ad902.chunk.js.LICENSE.txt"
+    "url": "/FreshCart-React-Project/static/js/main.27146d60.chunk.js.LICENSE.txt"
   },
   {
     "revision": "41566d2b0698d26050b9",

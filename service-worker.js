@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/FreshCart-React-Project/precache-manifest.47d2928c82b99be3ca4c79fb6cc162c2.js"
+  "/FreshCart-React-Project/precache-manifest.ee055fa101d53b8ed5e6aafdf4b88c57.js"
 );
 
 self.addEventListener('message', (event) => {

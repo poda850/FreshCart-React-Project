@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/FreshCart-React-Project/static/css/main.7d3812e9.chunk.css",
-    "main.js": "/FreshCart-React-Project/static/js/main.980ad902.chunk.js",
-    "main.js.map": "/FreshCart-React-Project/static/js/main.980ad902.chunk.js.map",
+    "main.css": "/FreshCart-React-Project/static/css/main.06c6db81.chunk.css",
+    "main.js": "/FreshCart-React-Project/static/js/main.27146d60.chunk.js",
+    "main.js.map": "/FreshCart-React-Project/static/js/main.27146d60.chunk.js.map",
     "runtime-main.js": "/FreshCart-React-Project/static/js/runtime-main.1c7ed0e1.js",
     "runtime-main.js.map": "/FreshCart-React-Project/static/js/runtime-main.1c7ed0e1.js.map",
     "static/css/2.5503fa0a.chunk.css": "/FreshCart-React-Project/static/css/2.5503fa0a.chunk.css",
-    "static/js/2.0b44cf25.chunk.js": "/FreshCart-React-Project/static/js/2.0b44cf25.chunk.js",
-    "static/js/2.0b44cf25.chunk.js.map": "/FreshCart-React-Project/static/js/2.0b44cf25.chunk.js.map",
+    "static/js/2.6d8ab353.chunk.js": "/FreshCart-React-Project/static/js/2.6d8ab353.chunk.js",
+    "static/js/2.6d8ab353.chunk.js.map": "/FreshCart-React-Project/static/js/2.6d8ab353.chunk.js.map",
     "index.html": "/FreshCart-React-Project/index.html",
-    "precache-manifest.47d2928c82b99be3ca4c79fb6cc162c2.js": "/FreshCart-React-Project/precache-manifest.47d2928c82b99be3ca4c79fb6cc162c2.js",
+    "precache-manifest.ee055fa101d53b8ed5e6aafdf4b88c57.js": "/FreshCart-React-Project/precache-manifest.ee055fa101d53b8ed5e6aafdf4b88c57.js",
     "service-worker.js": "/FreshCart-React-Project/service-worker.js",
     "static/css/2.5503fa0a.chunk.css.map": "/FreshCart-React-Project/static/css/2.5503fa0a.chunk.css.map",
-    "static/css/main.7d3812e9.chunk.css.map": "/FreshCart-React-Project/static/css/main.7d3812e9.chunk.css.map",
-    "static/js/2.0b44cf25.chunk.js.LICENSE.txt": "/FreshCart-React-Project/static/js/2.0b44cf25.chunk.js.LICENSE.txt",
-    "static/js/main.980ad902.chunk.js.LICENSE.txt": "/FreshCart-React-Project/static/js/main.980ad902.chunk.js.LICENSE.txt",
+    "static/css/main.06c6db81.chunk.css.map": "/FreshCart-React-Project/static/css/main.06c6db81.chunk.css.map",
+    "static/js/2.6d8ab353.chunk.js.LICENSE.txt": "/FreshCart-React-Project/static/js/2.6d8ab353.chunk.js.LICENSE.txt",
+    "static/js/main.27146d60.chunk.js.LICENSE.txt": "/FreshCart-React-Project/static/js/main.27146d60.chunk.js.LICENSE.txt",
     "static/media/App-store.png": "/FreshCart-React-Project/static/media/App-store.547465b7.png",
     "static/media/Google-play.webp": "/FreshCart-React-Project/static/media/Google-play.c5ab0dbc.webp",
     "static/media/MasterCard_Logo.svg.png": "/FreshCart-React-Project/static/media/MasterCard_Logo.svg.5cce40c9.png",
@@ -33,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.1c7ed0e1.js",
     "static/css/2.5503fa0a.chunk.css",
-    "static/js/2.0b44cf25.chunk.js",
-    "static/css/main.7d3812e9.chunk.css",
-    "static/js/main.980ad902.chunk.js"
+    "static/js/2.6d8ab353.chunk.js",
+    "static/css/main.06c6db81.chunk.css",
+    "static/js/main.27146d60.chunk.js"
   ]
 }
