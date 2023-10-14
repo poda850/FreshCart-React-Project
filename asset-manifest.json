@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/FreshCart-React-Project/static/css/main.7d3812e9.chunk.css",
+    "main.js": "/FreshCart-React-Project/static/js/main.980ad902.chunk.js",
+    "main.js.map": "/FreshCart-React-Project/static/js/main.980ad902.chunk.js.map",
+    "runtime-main.js": "/FreshCart-React-Project/static/js/runtime-main.1c7ed0e1.js",
+    "runtime-main.js.map": "/FreshCart-React-Project/static/js/runtime-main.1c7ed0e1.js.map",
+    "static/css/2.5503fa0a.chunk.css": "/FreshCart-React-Project/static/css/2.5503fa0a.chunk.css",
+    "static/js/2.0b44cf25.chunk.js": "/FreshCart-React-Project/static/js/2.0b44cf25.chunk.js",
+    "static/js/2.0b44cf25.chunk.js.map": "/FreshCart-React-Project/static/js/2.0b44cf25.chunk.js.map",
+    "index.html": "/FreshCart-React-Project/index.html",
+    "precache-manifest.47d2928c82b99be3ca4c79fb6cc162c2.js": "/FreshCart-React-Project/precache-manifest.47d2928c82b99be3ca4c79fb6cc162c2.js",
+    "service-worker.js": "/FreshCart-React-Project/service-worker.js",
+    "static/css/2.5503fa0a.chunk.css.map": "/FreshCart-React-Project/static/css/2.5503fa0a.chunk.css.map",
+    "static/css/main.7d3812e9.chunk.css.map": "/FreshCart-React-Project/static/css/main.7d3812e9.chunk.css.map",
+    "static/js/2.0b44cf25.chunk.js.LICENSE.txt": "/FreshCart-React-Project/static/js/2.0b44cf25.chunk.js.LICENSE.txt",
+    "static/js/main.980ad902.chunk.js.LICENSE.txt": "/FreshCart-React-Project/static/js/main.980ad902.chunk.js.LICENSE.txt",
+    "static/media/App-store.png": "/FreshCart-React-Project/static/media/App-store.547465b7.png",
+    "static/media/Google-play.webp": "/FreshCart-React-Project/static/media/Google-play.c5ab0dbc.webp",
+    "static/media/MasterCard_Logo.svg.png": "/FreshCart-React-Project/static/media/MasterCard_Logo.svg.5cce40c9.png",
+    "static/media/amazonPay.png": "/FreshCart-React-Project/static/media/amazonPay.8479bfc1.png",
+    "static/media/blog-img-1.jpeg": "/FreshCart-React-Project/static/media/blog-img-1.92cbbbfe.jpeg",
+    "static/media/blog-img-2.jpeg": "/FreshCart-React-Project/static/media/blog-img-2.421de816.jpeg",
+    "static/media/error.svg": "/FreshCart-React-Project/static/media/error.fb191a80.svg",
+    "static/media/all.css": "/FreshCart-React-Project/static/media/fa-v4compatibility.f20773a7.woff2",
+    "static/media/freshcart-logo.svg": "/FreshCart-React-Project/static/media/freshcart-logo.01e44e6a.svg",
+    "static/media/png-transparent-paypal-logo-text-line-blue.png": "/FreshCart-React-Project/static/media/png-transparent-paypal-logo-text-line-blue.aaca9bd2.png",
+    "static/media/slick-theme.css": "/FreshCart-React-Project/static/media/slick.f97e3bbf.svg",
+    "static/media/slider-image-1.jpeg": "/FreshCart-React-Project/static/media/slider-image-1.ec23b97c.jpeg",
+    "static/media/slider-image-2.jpeg": "/FreshCart-React-Project/static/media/slider-image-2.07e637f3.jpeg",
+    "static/media/slider-image-3.jpeg": "/FreshCart-React-Project/static/media/slider-image-3.0642acda.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c7ed0e1.js",
+    "static/css/2.5503fa0a.chunk.css",
+    "static/js/2.0b44cf25.chunk.js",
+    "static/css/main.7d3812e9.chunk.css",
+    "static/js/main.980ad902.chunk.js"
+  ]
+}
